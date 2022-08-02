@@ -35,7 +35,7 @@ body {
 
 .div-icon img {
     width: 120px;
-    transform: skew(10deg, 10deg);
+    transform: skew(5deg, 5deg);
 }
 
 .enlaces{
