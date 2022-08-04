@@ -21,55 +21,45 @@ body {
 
 /*HEADER Y NAV*/
 
-#cabeza {
-    height: 26vh;
-    background-image: linear-gradient(black, rgb(50, 50, 50) );
+header {
+    position: sticky;
+    top: 0;
 }
-.container {
+.navbar{
+    height: 30vh;
+}
+.enlaces {
+    display: none;
+}
+.icon-search {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
 }
-.container .buscar {
+.d-flex button {
+    background-color: rgb(4, 235, 235);
+    color: black;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+.d-flex button:hover {
+    background-color: white;
+    color: black;
+    transition: 0.2s;
+}
+.d-flex input{
+    background-color: rgb(4, 235, 235);
+    border: 1px solid black;
+    border-radius: 10px;
+}
+.collapse {
+    display: none;
+}
+.user {
     display: none;
 }
 
-.div-icon img {
-    width: 120px;
-    transform: skew(5deg, 5deg);
-}
 
-.enlaces{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    flex-direction: column;
-    padding-bottom: 5px;
-}
-.enlaces a{
-    text-decoration: none;
-    font-size: 100%;
-    color: aqua;
-}
-
-.carro {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.carro img{
-    padding-left: 25px;
-    width: 50px;
-}
-.user {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.user img{
-    padding-right: 25px;
-    width: 50px;
-}
 
 
 /*header-nav para movile terminado*/
@@ -81,7 +71,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(black, rgb(59, 214, 253));
+    background-image: linear-gradient(rgb(39, 37, 37), rgb(59, 214, 253));
 }
 h2 {
     margin: 0;
@@ -305,11 +295,12 @@ h4 {
     padding: 10px;
     width: 20vw;
     border: 3px;
-    border-radius: 15px;
-    background-image: linear-gradient(aqua, rgb(31, 185, 185));
+    border-radius: 50px;
+    background-color: rgb(30, 30, 30);
+    color: aqua;
 }
 .buscartienda img {
-    width: 28px;
+    width: 37px;
     height: 28px;
     padding-left: 0.5vw;
 }
@@ -380,6 +371,10 @@ h4 {
     border-radius: 18px;
     margin-top: 18px;
     width: 20vw;
+}
+.tandas button:hover {
+    background-image: linear-gradient(rgb(3, 161, 161), skyblue);
+    color: black;
 }
 
 .pasarpag{
@@ -533,6 +528,10 @@ h4 {
     margin: 15px 0;
     width: 80px;
 }
+.seccion1contacto__div button:hover {
+    background-image: linear-gradient(rgb(3, 161, 161), skyblue);
+    color: black;
+}
 .seccion1contacto__div img{
     width: 40px;
 }
@@ -588,7 +587,8 @@ fieldset {
     padding: 5px;
 }
 .seccion1contacto button:hover {
-    color: rgb(0, 167, 167);
+    background-image: linear-gradient(rgb(3, 161, 161), skyblue);
+    color: black;
 }
 .formcontacto a:hover {
     color: rgb(0, 167, 167);
@@ -618,7 +618,7 @@ fieldset {
 
 .pie {
     height: 10vh;
-    background-image: linear-gradient(black, rgb(50, 50, 50) );
+    background-image: linear-gradient(rgb(39, 37, 37), rgb(50, 50, 50) );
     display: flex;
     justify-content: space-between;
 }
@@ -635,67 +635,84 @@ fieldset {
     padding-left: 5px;
     padding-right: 10px;
 }
-.div-iconos {
+.div-iconos{
     display: flex;
-    justify-content: center;
     align-items: center;
-    padding-right: 20px;
+    justify-content: space-around;
+    padding: 0;
 }
-.div-iconos img{
-    width: 5vw;
-    padding: 0 10px;
+.div-icons a{
+    padding: 0;
+}
+i {
+    font-size: 1.8rem;
+    color: rgb(5, 218, 218);
+    padding: 0px 0.5rem;
+}
+i:hover{
+    color: rgb(230, 230, 230);
 }
 
-@media (min-width: 720px) {
+
+/*MEDIA QUERIES */
+
+
+@media (min-width: 804px) {
     
-    #cabeza{
-        height: 14vh;
+    /*header y nav*/
+    .navbar {
+        margin: 0;
+        padding: 0;
+        height: 15vh;
     }
-    .navegacion {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+    .navbar-toggler{
+        display: none;
     }
     .carro {
         display: none;
-        
     }
-    .enlaces {
-        display: flex;
+    .icon-search{
         flex-direction: row;
-        margin-right: 20px;
     }
-    .div-icon img{
-        margin-left: 25px;
-        margin-top: 7px;
+    .icon-search img {
+        padding: 0 5vw;
+        width: 18vw;
+        height: 15vh;
     }
-    .enlaces a{
-        padding: 10px;
-        font-size: 1.5vw;
+    .userpamobile{
+        display: none;
+    }
+    .user {
+        display: block;
     }
     .user img{
-        width: 3vw;
-        padding-right: 25px;
+        min-width: 3vw;
+        max-height: 4.5vh;
+        padding-right: 10px;
     }
-    .container .buscar {
+    .d-flex input {
+        height: 3vh;
+    }
+    .d-flex button {
+        display: flex;
+        align-items: center;
+        height: 2.8vh;
+    }
+    .enlaces {
         display: block;
         display: flex;
         align-items: center;
-        height: 45px;
-        margin-top: 45px;
+        text-align: center;
     }
-    .buscar input {
-        width: 15vw;
-        background-image: linear-gradient(aqua, rgb(31, 185, 185));
-        border: none;
-        border-radius: 15px;
-        padding: 5px 0px;
+    .enlaces a{
+        text-decoration: none;
+        padding: 0 10px;
+        color: rgb(5, 218, 218);
+        font-size: 1.5vw;
     }
-    
-    .buscar img {
-        max-width: 3vw;
-        margin: 0 7px;
+    .enlaces a:hover {
+        color: white;
+        transition: 0.2s;
     }
     
     
@@ -729,7 +746,7 @@ fieldset {
     }
     .seccion1 div img{
         height: 2.5vh;
-        width: 1.6vw;
+        width: 45px;
         padding: 0 0 0 20px;
     }
     .seccion1 button{
@@ -738,6 +755,10 @@ fieldset {
         background-image: linear-gradient(black, rgb(50, 50, 50) );
         color: aqua;
         border-radius: 18px;
+    }
+    .seccion1 button:hover {
+        background-image: linear-gradient(rgb(3, 161, 161), skyblue);
+        color: black;
     }
     .seccion1__articulo{
         margin-bottom: 50px;
@@ -759,7 +780,7 @@ fieldset {
     }
     .seccion2 div img{
         height: 2.5vh;
-        width: 1.6vw;
+        width: 45px;
         padding: 0 0 0 20px;
     }
     .seccion2 button{
@@ -769,6 +790,11 @@ fieldset {
         color: aqua;
         border-radius: 18px;
     }
+    .seccion2 button:hover {
+        background-image: linear-gradient(rgb(3, 161, 161), skyblue);
+        color: black;
+    }
+    
     .seccion2__articulo{
         margin-bottom: 50px;
     }
@@ -962,9 +988,8 @@ fieldset {
     .seccion2contacto__h3 h3 {
         font-size: 1.7vw;
     }
-    }
     .seccion2contacto__iconos img{
-        width: 2vw;
+        width: 65px;
     }
     
     /*ahora el footer*/
@@ -986,10 +1011,14 @@ fieldset {
         padding: 0;
     }
     .div-iconos img{
-        width: 2vw;
+        width: 80px;
         padding: 0px 25px;
     }
-    
+    i {
+        font-size: 1.8rem;
+        color: rgb(5, 218, 218);
+        padding: 2rem;
+    }
 }
 
 
