@@ -19,12 +19,12 @@ body {
 /* color salmon por si algun dia lo quiero cambiar por el aqua.
  background-image: linear-gradient(#fd6d5d, #ffd5d1) */
 
+
+
+
 /*HEADER Y NAV*/
 
-header {
-    position: sticky;
-    top: 0;
-}
+
 nav {
     background-image: linear-gradient(black, rgb(39, 37, 37));
 }
@@ -75,6 +75,9 @@ header a{
 .div-icon {
     display: flex;
     justify-content: center;
+}
+.div-icon img{
+    width: 22vw;
 }
 
 
@@ -309,13 +312,21 @@ h4 {
     align-items: center;
     margin: 1vh 0;
 }
+.boton-tienda {
+    border-radius: 25px;
+    margin: 0 10px;
+    background-color: rgb(20, 20, 20);
+    color: aqua;
+    border: 2.5px solid aqua;
+}
+
 .buscartienda input {
     padding: 10px;
     width: 20vw;
     border: 3px;
-    border-radius: 50px;
-    background-color: rgb(30, 30, 30);
-    color: aqua;
+    border-radius: 40px;
+    background-color: white;
+    color: black;
 }
 .buscartienda img {
     width: 37px;
@@ -702,7 +713,8 @@ i:hover{
         align-items: center;
     }
     .d-flex input {
-        height: 30px;  
+        height: 30px;
+        border-radius: 15px;  
     }
     .form-control:focus {
         border-color: black;
@@ -728,6 +740,7 @@ i:hover{
         display: flex;
         align-items: center;
         height: 30px;
+        border-radius: 15px;
     }
     .d-flex button:hover {
         background-color: rgb(230, 230, 230);
@@ -749,6 +762,10 @@ i:hover{
         margin: auto;
         width: 3vw;
     }
+    .div-icon img{
+        width: 10vw;
+    }
+    
 
     /*header y nav terminadoss*/
     
