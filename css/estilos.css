@@ -25,38 +25,56 @@ header {
     position: sticky;
     top: 0;
 }
-.navbar{
-    height: 30vh;
+nav {
+    background-image: linear-gradient(black, rgb(39, 37, 37));
 }
-.enlaces {
-    display: none;
+.navbar-toggler {
+    color: rgb(5, 218, 218);
 }
-.icon-search {
-    display: flex;
-    flex-direction: column;
+button span {
+    background-color: rgb(5, 218, 218);
+}
+
+header a{
+    text-decoration: none;
+    padding: 10px;
+}
+.navbar {
+    padding: 0;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 0.5fr;
     align-items: center;
+    
 }
-.d-flex button {
-    background-color: rgb(4, 235, 235);
-    color: black;
-    border: 1px solid black;
-    border-radius: 15px;
-}
-.d-flex button:hover {
-    background-color: white;
-    color: black;
-    transition: 0.2s;
-}
-.d-flex input{
-    background-color: rgb(4, 235, 235);
-    border: 1px solid black;
-    border-radius: 10px;
-}
-.collapse {
+.form-control,
+.btn {
     display: none;
 }
 .user {
     display: none;
+}
+.navbar-toggler {
+    margin-left: 8px;
+}
+.collapse {
+    display: flex;
+    flex-direction: column;
+}
+.collapse a{
+    color: rgb(5, 218, 218);
+    padding: 4px 1.8vw;
+}
+.collapse a:hover {
+    color: rgb(230, 230, 230);
+    transition: 0.3s;
+}
+.carro {
+    display: flex;
+    justify-content: center;
+}
+.div-icon {
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -660,63 +678,79 @@ i:hover{
 @media (min-width: 804px) {
     
     /*header y nav*/
-    .navbar {
-        margin: 0;
-        padding: 0;
-        height: 15vh;
-    }
-    .navbar-toggler{
-        display: none;
-    }
+    
     .carro {
         display: none;
     }
-    .icon-search{
+    .form-control,
+    .btn {
+        display: block;
+    }
+    .navbar {
+        padding: 0;
+        display: grid;
+        grid-template-columns: 4fr 4fr 0.5fr;
+        align-items: center;
+        
+    }
+    .icon-search {
+        display: flex;
+        justify-content: space-around;
+    }
+    .d-flex {
+        display: flex;
+        align-items: center;
+    }
+    .d-flex input {
+        height: 30px;  
+    }
+    .form-control:focus {
+        border-color: black;
+        box-shadow: none;
+    }
+
+    .btn-outline-success {
+        --bs-btn-color: aqua;
+        --bs-btn-border-color: aqua;
+        --bs-btn-hover-color: black;
+        --bs-btn-hover-bg: aqua;
+        --bs-btn-hover-border-color: aqua;
+        --bs-btn-active-color: rgb(230, 230, 230);
+        --bs-btn-active-bg: aqua;
+        --bs-btn-active-border-color: aqua;
+        --bs-btn-active-shadow: inset 0 3px 5px black;
+        --bs-btn-disabled-color: aqua;
+        --bs-btn-focus-shadow-rgb: none;
+        --bs-btn-disabled-border-color: aqua;
+    }
+
+    .d-flex button {
+        display: flex;
+        align-items: center;
+        height: 30px;
+    }
+    .d-flex button:hover {
+        background-color: rgb(230, 230, 230);
+        color: black;
+        border: 1px solid black;
+        transition: 0.3s;
+    }
+    .collapse {
         flex-direction: row;
+        justify-content: center;
     }
-    .icon-search img {
-        padding: 0 5vw;
-        width: 18vw;
-        height: 15vh;
-    }
-    .userpamobile{
-        display: none;
+    .collapse a{
+        font-size: 1.5vw;
     }
     .user {
         display: block;
     }
     .user img{
-        min-width: 3vw;
-        max-height: 4.5vh;
-        padding-right: 10px;
+        margin: auto;
+        width: 3vw;
     }
-    .d-flex input {
-        height: 3vh;
-    }
-    .d-flex button {
-        display: flex;
-        align-items: center;
-        height: 2.8vh;
-    }
-    .enlaces {
-        display: block;
-        display: flex;
-        align-items: center;
-        text-align: center;
-    }
-    .enlaces a{
-        text-decoration: none;
-        padding: 0 10px;
-        color: rgb(5, 218, 218);
-        font-size: 1.5vw;
-    }
-    .enlaces a:hover {
-        color: white;
-        transition: 0.2s;
-    }
-    
-    
-    /*header nav terminado*/
+
+    /*header y nav terminadoss*/
     
     
     /*INDEXX*/
