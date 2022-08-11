@@ -1,0 +1,58 @@
+$colornavfooter: rgb(5, 218, 218);
+
+nav {
+    background-image: linear-gradient(black, rgb(39, 37, 37));
+}
+.navbar-toggler {
+    color: $colornavfooter;
+    margin-left: 8px;
+}
+button {
+    span {
+        background-color: $colornavfooter;
+    }
+}
+
+header {
+    a {
+        text-decoration: none;
+    padding: 10px;
+    }
+}
+.navbar {
+    padding: 0;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 0.5fr;
+    align-items: center;
+    
+}
+.form-control,
+.btn {
+    display: none;
+}
+.user {
+    display: none;
+}
+.collapse {
+    display: flex;
+    flex-direction: column;
+    a {
+        color: $colornavfooter;
+    padding: 4px 1.8vw;
+    }
+}
+.collapse a:hover {
+    color: rgb(230, 230, 230);
+    transition: 0.3s;
+}
+.carro {
+    display: flex;
+    justify-content: center;
+}
+.div-icon {
+    display: flex;
+    justify-content: center;
+    img {
+        width: 22vw;
+    }
+}

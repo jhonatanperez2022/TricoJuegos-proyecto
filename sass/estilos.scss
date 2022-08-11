@@ -1,0 +1,895 @@
+@import "index.scss";
+@import "headernav.scss";
+@import "footer.scss";
+
+/*ajustes de body..*/
+
+
+body {
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    background: #B2FEFA;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0ED2F7, #B2FEFA);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0ED2F7, #B2FEFA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-repeat: cover;
+}
+
+
+/*HEADER Y NAV*/
+
+
+/*header-nav para movile terminado*/
+
+
+
+/*INDEX*/
+
+
+/*fin del main del index*/
+
+
+
+/*AQUI SE TRABAJARA EL MAIN DE LA SECCION CATEGORIAS!!*/
+
+#principal{
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1 1fr;
+    grid-template-rows: 170px 50px 170px 50px 170px 50px 170px 50px 170px;
+}
+h4 {
+    margin: 0;
+}
+.laflecha {
+    display: flex;
+    align-items: center;
+}
+.articleorden {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cataccion article,
+    .catdeportes article,
+    .cataventuras article,
+    .catrpg article {
+        margin-top: 10px;
+    }
+/*ACCION*/
+.cataccion__juegos3,
+.cataccion__juegos4,
+.cataccion__juegos5 {
+    display: none;
+}
+.categorias__h3 {
+    background-image: linear-gradient(rgb(20, 20, 20), rgb(70, 70, 70) );
+    border: 3px solid black;
+    border-radius: 15px;
+    margin: 10px 10vw;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 50px;
+}
+.categorias__h3 h3{
+    padding-left: 20px;
+    color: aqua;
+}
+
+
+
+.cataccion {
+    margin: 20px 10vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+.cataccion__juego-orden {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 5px;
+}
+.cataccion__juego-ordenh4,
+.catdeportes__juego-ordenh4,
+.cataventuras__juego-ordenh4,
+.catrpg__juego-ordenh4 {
+    margin-right: 12px;
+}
+
+/*DEPORTES*/
+
+.catdeportes__juegos3,
+.catdeportes__juegos4,
+.catdeportes__juegos5 {
+    display: none;
+}
+.catdeportes {
+    margin: 20px 10vw;
+    display: flex;
+    justify-content: space-around;
+}
+.catdeportes__juego-orden {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+/*AVENTURAS*/
+.cataventuras__juegos3,
+.cataventuras__juegos4,
+.cataventuras__juegos5 {
+    display: none;
+}
+.cataventuras {
+    margin: 20px 10vw;
+    display: flex;
+    justify-content: space-around;
+}
+.cataventuras__juego-orden {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+/*RPG*/
+.catrpg__juegos3,
+.catrpg__juegos4,
+.catrpg__juegos5 {
+    display: none;
+}
+.catrpg {
+    margin: 20px 10vw;
+    display: flex;
+    justify-content: space-around;
+}
+.catrpg__juego-orden {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+/*fin del main de categorias*/
+
+
+/*AQUI SE TRABAJARA EL MAIN DE TIENDA!!!*/
+
+
+.buscar-categorias{
+    margin: 0 10vw 3vh 25vw;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.buscartienda {
+    display: flex;
+    align-items: center;
+    margin: 1vh 0;
+}
+.boton-tienda {
+    border-radius: 25px;
+    margin: 0 10px;
+    background-color: rgb(20, 20, 20);
+    color: aqua;
+    border: 2.5px solid aqua;
+}
+
+.buscartienda input {
+    padding: 10px;
+    width: 20vw;
+    border: 3px;
+    border-radius: 40px;
+    background-color: white;
+    color: black;
+}
+.buscartienda img {
+    width: 37px;
+    height: 28px;
+    padding-left: 0.5vw;
+}
+.selectorestienda {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin: 1vh 0;
+}
+.selectorestienda select {
+        color: aqua;
+        height: 4vh;
+        width: 30vw;
+        padding: 0px 20px 0px 10px;
+        font-size: 16px;
+        background-image: linear-gradient(black, rgb(50, 50, 50) );
+        border: 2px aqua;
+}
+
+
+
+
+.tanda1__juegos4,
+.tanda2__juegos8 {
+    display: none;
+}
+
+.tandas {
+    display: grid;
+    margin: 5vh 10vw 2vh;
+    grid-template-columns: 1;
+    grid-template-rows: repeat(2, auto);
+}
+.tanda1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 20vh;
+    margin: 5vh 0;
+}
+.tandas img{
+    height: 80px;
+    width: 20vw;
+}
+
+.tanda__juegos-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.tanda2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 20vh;
+    margin: 5vh 0;
+}
+.tandas a{
+    text-decoration: none;
+    color: rgb(20, 20, 20);
+}
+
+.tandas button {
+    height: 40px;
+    color: aqua;
+    background-image: linear-gradient(black, rgb(50, 50, 50) );
+    border-radius: 18px;
+    margin-top: 18px;
+    width: 20vw;
+}
+.tandas button:hover {
+    background-image: linear-gradient(rgb(3, 161, 161), skyblue);
+    color: black;
+}
+
+.pasarpag{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+.pasarpag img{
+    margin-left: 10px;
+}
+
+/*fin del main del tienda*/
+
+
+/*AHORA VOY A TRABAJAR EL MAIN DE PLATAFORMAS!!!!!!!!!*/
+
+#principal{
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1 1fr;
+    grid-template-rows: 170px 50px 170px 50px 170px 50px 170px 50px 170px;
+}
+h4 {
+    margin: 0;
+}
+.flechaplataformas {
+    display: flex;
+    align-items: center;
+}
+.catps a,
+.catpc a,
+.catxbox a,
+.catwii a {
+    text-decoration: none;
+    color: black;
+}
+.catps article,
+    .catpc article,
+    .catxbox article,
+    .catwii article {
+        margin-top: 10px;
+    }
+/*PS*/
+.catps__juegos3,
+.catps__juegos4,
+.catps__juegos5 {
+    display: none;
+}
+.plataformas__h3 {
+    background-image: linear-gradient(rgb(20, 20, 20), rgb(70, 70, 70) );
+    border: 3px solid black;
+    border-radius: 15px;
+    margin: 10px 10vw;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 50px;
+}
+.plataformas__h3 h3{
+    padding-left: 20px;
+    color: aqua;
+}
+
+
+
+.catps {
+    margin: 20px 10vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+.catps__juego-orden {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+/*PC*/
+
+.catpc__juegos3,
+.catpc__juegos4,
+.catpc__juegos5 {
+    display: none;
+}
+.catpc {
+    margin: 20px 10vw;
+    display: flex;
+    justify-content: space-around;
+}
+.catpc__juego-orden {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+/*XBOX*/
+.catxbox__juegos3,
+.catxbox__juegos4,
+.catxbox__juegos5 {
+    display: none;
+}
+.catxbox {
+    margin: 20px 10vw;
+    display: flex;
+    justify-content: space-around;
+}
+.catxbox__juego-orden {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+/*WII*/
+.catwii__juegos3,
+.catwii__juegos4,
+.catwii__juegos5 {
+    display: none;
+}
+.catwii {
+    margin: 20px 10vw;
+    display: flex;
+    justify-content: space-around;
+}
+.catwii__juego-orden {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+
+
+/*fin del main de plataformas*/
+
+
+/*AQUI SE TRABAJARA EL MAIN DE CONTACTO!!!!!*/
+
+
+
+.h3contacto {
+    display: flex;
+    justify-content: center;
+}
+.h3contacto h3{
+    font-size: 20px;
+}
+.seccion1contacto__div p{
+    display: none;
+}
+.seccion1contacto__div button {
+    margin: 15px 0;
+    width: 80px;
+}
+.seccion1contacto__div button:hover {
+    background-image: linear-gradient(rgb(3, 161, 161), skyblue);
+    color: black;
+}
+.seccion1contacto__div img{
+    width: 40px;
+}
+.seccion1contacto__div {
+    display: flex;
+    justify-content: center;
+}
+.seccion1contacto__div-wpp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 3vw;
+}
+.seccion1contacto__div-preg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 3vw;
+}
+
+.escribinosh3 {
+    display: flex;
+    justify-content: center;
+}
+
+/*el formularioo*/
+
+.formcontacto {
+    display: flex;
+    justify-content: center;
+    
+}
+.formcontacto a{
+    text-decoration: none;
+    color: black;
+}
+.formcontacto input,
+.formcontacto textarea {
+    margin-top: 5px;
+    color: aqua;
+    background-image: linear-gradient(black, rgb(50, 50, 50) );
+    border-radius: 10px;
+}
+fieldset {
+    border: none;
+    border-radius: 15px;
+    color: 1px solid black;
+}
+.seccion1contacto button {
+    color: aqua;
+    background-image: linear-gradient(black, rgb(50, 50, 50) );
+    border-radius: 10px;
+    padding: 5px;
+}
+.seccion1contacto button:hover {
+    background-image: linear-gradient(rgb(3, 161, 161), skyblue);
+    color: black;
+}
+.formcontacto a:hover {
+    color: rgb(0, 167, 167);
+}
+
+
+.seccion2contacto__h3{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+.seccion2contacto__iconos{
+    display: flex;
+    justify-content: center;
+}
+.seccion2contacto__iconos img{
+    padding: 10px 15px;
+}
+
+/*fin del main de contacto*/
+
+
+
+/*AQUI SE TRABAJARA EL FOOTER*/
+
+
+/*Fin del footer*/
+
+
+
+/*MEDIA QUERIES */
+
+
+@media (min-width: 804px) {
+    
+    /*header y nav*/
+    
+    .carro {
+        display: none;
+    }
+    .form-control,
+    .btn {
+        display: block;
+    }
+    .navbar {
+        padding: 0;
+        display: grid;
+        grid-template-columns: 4fr 4fr 0.5fr;
+        align-items: center;
+        
+    }
+    .icon-search {
+        display: flex;
+        justify-content: space-around;
+    }
+    .d-flex {
+        display: flex;
+        align-items: center;
+    }
+    .d-flex input {
+        height: 30px;
+        border-radius: 15px;  
+    }
+    .form-control:focus {
+        border-color: black;
+        box-shadow: none;
+    }
+
+    .btn-outline-success {
+        --bs-btn-color: aqua;
+        --bs-btn-border-color: aqua;
+        --bs-btn-hover-color: black;
+        --bs-btn-hover-bg: aqua;
+        --bs-btn-hover-border-color: aqua;
+        --bs-btn-active-color: rgb(230, 230, 230);
+        --bs-btn-active-bg: aqua;
+        --bs-btn-active-border-color: aqua;
+        --bs-btn-active-shadow: inset 0 3px 5px black;
+        --bs-btn-disabled-color: aqua;
+        --bs-btn-focus-shadow-rgb: none;
+        --bs-btn-disabled-border-color: aqua;
+    }
+
+    .d-flex button {
+        display: flex;
+        align-items: center;
+        height: 30px;
+        border-radius: 15px;
+    }
+    .d-flex button:hover {
+        background-color: rgb(230, 230, 230);
+        color: black;
+        border: 1px solid black;
+        transition: 0.3s;
+    }
+    .collapse {
+        flex-direction: row;
+        justify-content: center;
+    }
+    .collapse a{
+        font-size: 1.5vw;
+    }
+    .user {
+        display: block;
+    }
+    .user img{
+        margin: auto;
+        width: 3vw;
+    }
+    .div-icon img{
+        width: 10vw;
+    }
+    
+
+    /*header y nav terminadoss*/
+    
+    
+    /*INDEXX*/
+    
+    
+    .subtitulos {
+        height: 20vh;
+    }
+    h2 {
+        font-size: 4vw;
+        padding: 0px 20vw;
+    }
+    .seccion1 {
+        padding: 0px 20vw;
+        display: grid;
+        grid-column: auto auto auto;
+        margin: 5vh 0;
+    }
+    .seccion1__articulo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 15px;
+    }
+    .seccion1 h4{
+        font-size: 1.5vw;
+    }
+    .seccion1 div img{
+        height: 2.5vh;
+        width: 45px;
+        padding: 0 0 0 20px;
+    }
+    .seccion1 button{
+        display: block;
+        height: 4vh;
+        background-image: linear-gradient(black, rgb(50, 50, 50) );
+        color: aqua;
+        border-radius: 18px;
+    }
+    .seccion1 button:hover {
+        background-image: linear-gradient(rgb(3, 161, 161), skyblue);
+        color: black;
+    }
+    .seccion1__articulo{
+        margin-bottom: 50px;
+    }
+    
+    .seccion2 {
+        padding: 0px 20vw;
+        display: grid;
+        grid-column: auto auto auto;
+        margin: 5vh 0;
+    }
+    .seccion2__articulo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .seccion2 h4{
+        font-size: 1.5vw;
+    }
+    .seccion2 div img{
+        height: 2.5vh;
+        width: 45px;
+        padding: 0 0 0 20px;
+    }
+    .seccion2 button{
+        display: block;
+        height: 4vh;
+        background-image: linear-gradient(black, rgb(50, 50, 50) );
+        color: aqua;
+        border-radius: 18px;
+    }
+    .seccion2 button:hover {
+        background-image: linear-gradient(rgb(3, 161, 161), skyblue);
+        color: black;
+    }
+    
+    .seccion2__articulo{
+        margin-bottom: 50px;
+    }
+    .articulo-button{
+        display: flex;
+    }
+    
+    
+    /*categorias*/
+    
+    
+    .cataccion article,
+    .catdeportes article,
+    .cataventuras article,
+    .catrpg article {
+        margin-top: 20px;
+    }
+    .cataccion__juegos3,
+    .cataccion__juegos4,
+    .cataccion__juegos5 {
+        display: block;
+    }
+    .catdeportes__juegos3,
+    .catdeportes__juegos4,
+    .catdeportes__juegos5 {
+        display: block;
+    }
+    .cataventuras__juegos3,
+    .cataventuras__juegos4,
+    .cataventuras__juegos5 {
+        display: block;
+    }
+    .catrpg__juegos3,
+    .catrpg__juegos4,
+    .catrpg__juegos5 {
+        display: block;
+    }
+    
+    /*TIENDAA*/
+    
+    .buscar-categorias {
+        width: 70vw;
+        margin: 0 15vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .tanda1__juegos4,
+    .tanda2__juegos8 {
+        display: block;
+    }
+    
+    .tanda1 article,
+    .tanda2 article {
+        padding: 20px;
+    }
+    .tandas {
+        display: flex;
+        flex-direction: column;
+        margin: 0 10vw 0;
+        height: 70vh;
+    }
+    
+    
+    .tanda2 {
+        margin: 10vh 5vw;
+        display: flex;
+        justify-content: center;
+    }
+    .tanda1 {
+        margin: 10vh 5vw;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .tandas img{
+        height: 7vw;
+        width: 13vw;
+    }
+    .tandas button {
+        height: 40px;
+        color: aqua;
+        background-color: rgb(20, 20, 20);
+        border-radius: 18px;
+        margin-top: 18px;
+        width: 10vw;
+    }
+    .pasarpag{
+        height: 100px;
+        align-items: center;
+        margin-top: 5vh;
+    }
+    .pasarpag label {
+        padding: 0 1vw;
+    }
+    
+    /*PLATAFORMAS*/
+    
+    .catps article,
+    .catpc article,
+    .catxbox article,
+    .catwii article {
+        margin-top: 20px;
+    }
+    .catps__juegos3,
+    .catps__juegos4,
+    .catps__juegos5 {
+        display: block;
+    }
+    .catpc__juegos3,
+    .catpc__juegos4,
+    .catpc__juegos5 {
+        display: block;
+    }
+    .catxbox__juegos3,
+    .catxbox__juegos4,
+    .catxbox__juegos5 {
+        display: block;
+    }
+    .catwii__juegos3,
+    .catwii__juegos4,
+    .catwii__juegos5 {
+        display: block;
+    }
+    .catps__juego-ordenh4,
+    .catpc__juego-ordenh4,
+    .catxbox__juego-ordenh4,
+    .catwii__juego-ordenh4 {
+        padding-right: 3px;
+    }
+    .plataformas__h3 h3{
+        font-size: 25px;
+    }
+    
+    
+    /*CONTACTOOO*/
+    
+    .seccion1contacto{
+        display: grid;
+        grid-template-columns: auto 35vw;
+        grid-template-rows: 26vh;
+        margin: 5vh 10vw 15vh 25vw;
+        align-items: center;
+    }
+    .seccion1contacto__div{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .seccion1contacto__div p{
+        display: block;
+        font-size: 15px;
+        padding: 0 10px;
+    }
+    .seccion1contacto__div-wpp{
+        display: flex;
+        flex-direction: row;
+    }
+    .seccion1contacto__div-preg{
+        display: flex;
+        flex-direction: row;
+    }
+    .formcontacto{
+        width: 35vw;
+        height: 26vh;
+    }
+    fieldset {
+        width: 35vw;
+        height: 26vh;
+    }
+    fieldset label {
+        font-size: 1.5vw;
+    }
+
+    fieldset input,
+    fieldset textarea {
+        width: 35vw;
+    }
+    
+    .lalala {
+        width: 35vw;
+        height: 30vh;
+        margin: 0;
+    }
+    fieldset a{
+        padding-right: 10px;
+    }
+    .seccion2contacto {
+        height: 18vh;
+    }
+    .seccion2contacto__h3 h3 {
+        font-size: 1.7vw;
+    }
+    .seccion2contacto__iconos img{
+        width: 65px;
+    }
+    
+    /*ahora el footer*/
+    
+    .pie {
+        display: flex;
+        justify-content: space-around;
+    }
+    .div-parrafos {
+        width: 50%;
+    }
+    .div-parrafos p{
+        font-size: 12px;
+    }
+    .div-iconos {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+    }
+    .div-iconos img{
+        width: 80px;
+        padding: 0px 25px;
+    }
+    i {
+        font-size: 1.8rem;
+        color: rgb(5, 218, 218);
+        padding: 2rem;
+    }
+}
