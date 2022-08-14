@@ -10,9 +10,7 @@ body {
     padding: 0%;
     width: 100%;
     font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
-    background: #B2FEFA;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #0ED2F7, #B2FEFA);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #0ED2F7, #B2FEFA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-image: linear-gradient(rgb(30, 30, 30), rgb(60, 60, 60) );
     background-repeat: cover;
 }
 
@@ -602,77 +600,26 @@ fieldset {
         font-size: 4vw;
         padding: 0px 20vw;
     }
-    .seccion1 {
-        padding: 0px 20vw;
-        display: grid;
-        grid-column: auto auto auto;
-        margin: 5vh 0;
+    .container {
+        height: 70vh;
     }
-    .seccion1__articulo {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding-top: 15px;
+    .card-juegos {
+        width: 60%;
+        height: 30vh;
+        margin: auto;
     }
-    .seccion1 h4{
+    .card-juegos img{
+        height: 15vh;
+    }
+    .card-juegos h5 {
+        font-size: 25px;
+        margin: 10px 10px 30px;
+    }
+    .card-juegos a{
+        padding: 10px;
+    }
+    .card-juegos h5 {
         font-size: 1.5vw;
-    }
-    .seccion1 div img{
-        height: 2.5vh;
-        width: 45px;
-        padding: 0 0 0 20px;
-    }
-    .seccion1 button{
-        display: block;
-        height: 4vh;
-        background-image: linear-gradient(black, rgb(50, 50, 50) );
-        color: aqua;
-        border-radius: 18px;
-    }
-    .seccion1 button:hover {
-        background-image: linear-gradient(rgb(3, 161, 161), skyblue);
-        color: black;
-    }
-    .seccion1__articulo{
-        margin-bottom: 50px;
-    }
-    
-    .seccion2 {
-        padding: 0px 20vw;
-        display: grid;
-        grid-column: auto auto auto;
-        margin: 5vh 0;
-    }
-    .seccion2__articulo {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .seccion2 h4{
-        font-size: 1.5vw;
-    }
-    .seccion2 div img{
-        height: 2.5vh;
-        width: 45px;
-        padding: 0 0 0 20px;
-    }
-    .seccion2 button{
-        display: block;
-        height: 4vh;
-        background-image: linear-gradient(black, rgb(50, 50, 50) );
-        color: aqua;
-        border-radius: 18px;
-    }
-    .seccion2 button:hover {
-        background-image: linear-gradient(rgb(3, 161, 161), skyblue);
-        color: black;
-    }
-    
-    .seccion2__articulo{
-        margin-bottom: 50px;
-    }
-    .articulo-button{
-        display: flex;
     }
     
     
