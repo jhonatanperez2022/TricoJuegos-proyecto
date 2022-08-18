@@ -1,16 +1,23 @@
-$fondocolor: linear-gradient(rgb(39, 37, 37), rgb(59, 214, 253));
-$color: aqua;
+$subtitulos:(
+    fondocolor: linear-gradient(rgb(39, 37, 37), rgb(59, 214, 253)),
+    color: aqua
+    letrasize: 6vw
+);
+@mixin imgindex ($ancho, $alto){
+    width: ancho;
+    height: alto;
+}
 
 .subtitulos {
     height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: $fondocolor;
+    background-image: map-get($map: $subtitulos, $key: fondocolor);
     h2 {
         margin: 0;
-        font-size: 6vw;
-        color: $color;
+        font-size: map-get($map: $subtitulos, $key: letrasize);
+        color: map-get($map: $subtitulos, $key: color);
     }
 }
 
@@ -31,8 +38,7 @@ $color: aqua;
     border-radius: 15px;
     box-shadow: 2px 2px 15px black;
     img {
-        width: 100%;
-        height: 10vh;
+        @include imgindex (100%, 10vh);
     }
     h5 {
         font-weight: bold;
@@ -41,7 +47,7 @@ $color: aqua;
     }
     a {
         text-decoration: none;
-        color: $color;
+        color: map-get($map: $subtitulos, $key: color);
         background-color: rgb(20, 20, 20);
         margin: auto;
         padding: 10px;

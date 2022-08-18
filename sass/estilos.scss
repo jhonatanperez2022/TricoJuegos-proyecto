@@ -2,6 +2,7 @@
 @import "headernav.scss";
 @import "footer.scss";
 
+
 /*ajustes de body..*/
 
 
@@ -39,6 +40,7 @@ body {
 }
 h4 {
     margin: 0;
+    color: rgb(1, 189, 189);
 }
 .laflecha {
     display: flex;
@@ -284,17 +286,16 @@ h4 {
 }
 h4 {
     margin: 0;
+    color: rgb(1, 189, 189);
 }
-.flechaplataformas {
+.laflecha {
     display: flex;
     align-items: center;
 }
-.catps a,
-.catpc a,
-.catxbox a,
-.catwii a {
-    text-decoration: none;
-    color: black;
+.articleorden {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .catps article,
     .catpc article,
@@ -302,21 +303,14 @@ h4 {
     .catwii article {
         margin-top: 10px;
     }
-/*PS*/
+/*ACCION*/
 .catps__juegos3,
 .catps__juegos4,
 .catps__juegos5 {
     display: none;
 }
 .plataformas__h3 {
-    background-image: linear-gradient(rgb(20, 20, 20), rgb(70, 70, 70) );
-    border: 3px solid black;
-    border-radius: 15px;
-    margin: 10px 10vw;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    height: 50px;
+    @extend .categorias__h3
 }
 .plataformas__h3 h3{
     padding-left: 20px;
@@ -332,12 +326,18 @@ h4 {
 }
 
 .catps__juego-orden {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 5px;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 5px;
+}
+.catps__juego-ordenh4,
+.catpc__juego-ordenh4,
+.catxbox__juego-ordenh4,
+.catwii__juego-ordenh4 {
+    margin-right: 12px;
 }
 
-/*PC*/
+/*DEPORTES*/
 
 .catpc__juegos3,
 .catpc__juegos4,
@@ -355,7 +355,7 @@ h4 {
     margin-top: 5px;
 }
 
-/*XBOX*/
+/*AVENTURAS*/
 .catxbox__juegos3,
 .catxbox__juegos4,
 .catxbox__juegos5 {
@@ -372,7 +372,7 @@ h4 {
     margin-top: 5px;
 }
 
-/*WII*/
+/*RPG*/
 .catwii__juegos3,
 .catwii__juegos4,
 .catwii__juegos5 {
@@ -399,7 +399,9 @@ h4 {
 
 
 .h3contacto {
+    color: rgb(5, 218, 218);
     display: flex;
+    margin: 5vh 0;
     justify-content: center;
 }
 .h3contacto h3{
@@ -439,10 +441,14 @@ h4 {
 .escribinosh3 {
     display: flex;
     justify-content: center;
+    color: rgb(5, 218, 218);
 }
 
 /*el formularioo*/
 
+label {
+    color: rgb(5, 218, 218);
+}
 .formcontacto {
     display: flex;
     justify-content: center;
@@ -474,8 +480,11 @@ fieldset {
     background-image: linear-gradient(rgb(3, 161, 161), skyblue);
     color: black;
 }
-.formcontacto a:hover {
+.formcontacto a {
     color: rgb(0, 167, 167);
+}
+.formcontacto a:hover {
+    color: rgb(230, 230, 230);
 }
 
 
@@ -483,6 +492,9 @@ fieldset {
     margin-top: 10px;
     display: flex;
     justify-content: center;
+    h3 {
+        color: rgb(5, 218, 218);
+    }
 }
 .seccion2contacto__iconos{
     display: flex;
@@ -766,6 +778,7 @@ fieldset {
     }
     .seccion1contacto__div p{
         display: block;
+        color: rgb(5, 218, 218);
         font-size: 15px;
         padding: 0 10px;
     }

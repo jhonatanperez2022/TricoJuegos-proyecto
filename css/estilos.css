@@ -154,7 +154,8 @@ body {
   grid-template-rows: 170px 50px 170px 50px 170px 50px 170px 50px 170px; }
 
 h4 {
-  margin: 0; }
+  margin: 0;
+  color: #01bdbd; }
 
 .laflecha {
   display: flex;
@@ -373,18 +374,17 @@ h4 {
   grid-template-rows: 170px 50px 170px 50px 170px 50px 170px 50px 170px; }
 
 h4 {
-  margin: 0; }
+  margin: 0;
+  color: #01bdbd; }
 
-.flechaplataformas {
+.laflecha {
   display: flex;
   align-items: center; }
 
-.catps a,
-.catpc a,
-.catxbox a,
-.catwii a {
-  text-decoration: none;
-  color: black; }
+.articleorden {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
 
 .catps article,
 .catpc article,
@@ -392,7 +392,7 @@ h4 {
 .catwii article {
   margin-top: 10px; }
 
-/*PS*/
+/*ACCION*/
 .catps__juegos3,
 .catps__juegos4,
 .catps__juegos5 {
@@ -419,10 +419,16 @@ h4 {
 
 .catps__juego-orden {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   margin-top: 5px; }
 
-/*PC*/
+.catps__juego-ordenh4,
+.catpc__juego-ordenh4,
+.catxbox__juego-ordenh4,
+.catwii__juego-ordenh4 {
+  margin-right: 12px; }
+
+/*DEPORTES*/
 .catpc__juegos3,
 .catpc__juegos4,
 .catpc__juegos5 {
@@ -438,7 +444,7 @@ h4 {
   justify-content: space-between;
   margin-top: 5px; }
 
-/*XBOX*/
+/*AVENTURAS*/
 .catxbox__juegos3,
 .catxbox__juegos4,
 .catxbox__juegos5 {
@@ -454,7 +460,7 @@ h4 {
   justify-content: space-between;
   margin-top: 5px; }
 
-/*WII*/
+/*RPG*/
 .catwii__juegos3,
 .catwii__juegos4,
 .catwii__juegos5 {
@@ -473,7 +479,9 @@ h4 {
 /*fin del main de plataformas*/
 /*AQUI SE TRABAJARA EL MAIN DE CONTACTO!!!!!*/
 .h3contacto {
+  color: #05dada;
   display: flex;
+  margin: 5vh 0;
   justify-content: center; }
 
 .h3contacto h3 {
@@ -511,9 +519,13 @@ h4 {
 
 .escribinosh3 {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  color: #05dada; }
 
 /*el formularioo*/
+label {
+  color: #05dada; }
+
 .formcontacto {
   display: flex;
   justify-content: center; }
@@ -544,13 +556,18 @@ fieldset {
   background-image: linear-gradient(#03a1a1, skyblue);
   color: black; }
 
-.formcontacto a:hover {
+.formcontacto a {
   color: #00a7a7; }
+
+.formcontacto a:hover {
+  color: #e6e6e6; }
 
 .seccion2contacto__h3 {
   margin-top: 10px;
   display: flex;
   justify-content: center; }
+  .seccion2contacto__h3 h3 {
+    color: #05dada; }
 
 .seccion2contacto__iconos {
   display: flex;
@@ -749,6 +766,7 @@ fieldset {
     flex-direction: column; }
   .seccion1contacto__div p {
     display: block;
+    color: #05dada;
     font-size: 15px;
     padding: 0 10px; }
   .seccion1contacto__div-wpp {
