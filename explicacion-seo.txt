@@ -1,0 +1,36 @@
+Explicacion SEO 
+
+Los Titulos de mis paginas son los siguientes:
+
+   TricoJuegos-Inicio
+   Categorias-Tricojuegos
+   Contacto-TricoJuegos
+   Plataformas-TricoJuegos
+   Tienda-TricoJuegos
+
+meta description: La frase principal es Encontra tu juego, rapido y al mejor precio, y luego agrego algo en referencia a la pagina.
+
+INDEX:
+Al ser la pagina principal digo que ofrecemos garantia ya tencion al cliente, añadido con la frase principal para que sea algo breve y seguro.
+CATEGORIAS:
+Del estilo que gustes, ya que hay de todo para encontrar.
+CONTACTO:
+Resalto que bridamos atencion personalizada, para que haya mas confianza en nuestra pagina.
+PLATAFORMAS:
+Como en categorias, que podes encontrar la variedad de juego que quieras, en plataforma tambien esta esa variedad para la que gustes.
+TIENDA:
+Aca simplemente dejo la frase principal porque creo que es suficiente para describir de que trata la pagina, ya que es la tienda y esta para buscar los juegos que gustes y al mejor precio.
+
+meta keywords: En cada pagina puse las palabras "PC, PLAY STATION, PC, XBOX, WII", y luego trate de agregar algo en referencia a la pagina.
+
+INDEX:
+Aca agregue la palabra DESCUENTOS ya que en el index dejo juegos en descuentos y puede interesarle a los usuarios que hayan juegos a menor precio.
+CATEGORIAS:
+En esta seccion puse las categorias de juegos mas jugados como "ACCION, DEPORTES, AVENTURAS, RPG"
+CONTACTO:
+Aqui solo agregue CONTACTO, por que no habia nada destacable que agregar asi que puse el nombre de la seccion, que sepan que pueden contactarse con nosotros.
+PLATAFORMAS:
+Aqui simplemente deje la descripcion por defecto y agregue "PLATAFORMAS" creo que con eso ya dice suficiente sobre esta seccion.
+TIENDA:
+Aqui agregue palabras que incentiven al usuario a entrar ya que a todos les gusta obtener los juegos que estan buscando y siempre al mejor precio posible, por eso puse "DESCUENTOS, POPULARES, BARATOS".
+.
