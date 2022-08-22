@@ -1,0 +1,108 @@
+/*Contacto*/
+
+.h3contacto {
+    color: rgb(5, 218, 218);
+    display: flex;
+    margin: 5vh 0;
+    justify-content: center;
+    h3 {
+        font-size: 20px;
+    }
+}
+
+.seccion1contacto__div {
+    display: flex;
+    justify-content: center;
+    p {
+        display: none;
+    }
+    button {
+        margin: 15px 0;
+        width: 80px;
+    }
+    button:hover {
+        background-image: linear-gradient(rgb(3, 161, 161), skyblue);
+        color: black;
+    }
+    img {
+        width: 40px;
+    }
+}
+.seccion1contacto__div-wpp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 3vw;
+}
+.seccion1contacto__div-preg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 3vw;
+}
+
+.escribinosh3 {
+    display: flex;
+    justify-content: center;
+    color: rgb(5, 218, 218);
+}
+
+/*el formularioo*/
+
+label {
+    color: rgb(5, 218, 218);
+}
+.formcontacto {
+    display: flex;
+    justify-content: center;
+    a {
+        text-decoration: none;
+        color: black;
+    }
+}
+
+.formcontacto input,
+.formcontacto textarea {
+    margin-top: 5px;
+    color: aqua;
+    background-image: linear-gradient(black, rgb(50, 50, 50) );
+    border-radius: 10px;
+}
+fieldset {
+    border: none;
+    border-radius: 15px;
+    color: 1px solid black;
+}
+.seccion1contacto button {
+    color: aqua;
+    background-image: linear-gradient(black, rgb(50, 50, 50) );
+    border-radius: 10px;
+    padding: 5px;
+}
+.seccion1contacto button:hover {
+    background-image: linear-gradient(rgb(3, 161, 161), skyblue);
+    color: black;
+}
+.formcontacto a {
+    color: rgb(0, 167, 167);
+}
+.formcontacto a:hover {
+    color: rgb(230, 230, 230);
+}
+
+
+.seccion2contacto__h3{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    h3 {
+        color: rgb(5, 218, 218);
+    }
+}
+.seccion2contacto__iconos{
+    display: flex;
+    justify-content: center;
+    img {
+        padding: 10px 15px;
+    }
+}

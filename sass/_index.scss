@@ -1,11 +1,11 @@
 $subtitulos:(
     fondocolor: linear-gradient(rgb(39, 37, 37), rgb(59, 214, 253)),
-    color: aqua
+    color: aqua,
     letrasize: 6vw
 );
 @mixin imgindex ($ancho, $alto){
-    width: ancho;
-    height: alto;
+    width: $ancho;
+    height: $alto;
 }
 
 .subtitulos {

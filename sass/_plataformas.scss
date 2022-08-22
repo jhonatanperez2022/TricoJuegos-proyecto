@@ -1,0 +1,112 @@
+/*Plataformas*/
+
+#principal{
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1 1fr;
+    grid-template-rows: 170px 50px 170px 50px 170px 50px 170px 50px 170px;
+}
+h4 {
+    margin: 0;
+    color: rgb(1, 189, 189);
+}
+.laflecha {
+    display: flex;
+    align-items: center;
+}
+.articleorden {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.catps article,
+    .catpc article,
+    .catxbox article,
+    .catwii article {
+        margin-top: 10px;
+    }
+    .plataformas__h3 {
+        @extend .categorias__h3
+    }
+    .plataformas__h3 h3{
+        padding-left: 20px;
+        color: aqua;
+    }
+    .catps__juego-ordenh4,
+.catpc__juego-ordenh4,
+.catxbox__juego-ordenh4,
+.catwii__juego-ordenh4 {
+    margin-right: 12px;
+}
+
+/*PS*/
+
+.catps__juegos3,
+.catps__juegos4,
+.catps__juegos5 {
+    display: none;
+}
+
+.catps {
+    margin: 20px 10vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+.catps__juego-orden {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 5px;
+}
+
+/*PC*/
+
+.catpc__juegos3,
+.catpc__juegos4,
+.catpc__juegos5 {
+    display: none;
+}
+.catpc {
+    margin: 20px 10vw;
+    display: flex;
+    justify-content: space-around;
+}
+.catpc__juego-orden {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+/*XBOX*/
+.catxbox__juegos3,
+.catxbox__juegos4,
+.catxbox__juegos5 {
+    display: none;
+}
+.catxbox {
+    margin: 20px 10vw;
+    display: flex;
+    justify-content: space-around;
+}
+.catxbox__juego-orden {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}
+
+/*WII*/
+.catwii__juegos3,
+.catwii__juegos4,
+.catwii__juegos5 {
+    display: none;
+}
+.catwii {
+    margin: 20px 10vw;
+    display: flex;
+    justify-content: space-around;
+}
+.catwii__juego-orden {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+}

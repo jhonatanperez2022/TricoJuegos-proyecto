@@ -133,20 +133,7 @@ i {
 i:hover {
   color: #e6e6e6; }
 
-/*ajustes de body..*/
-body {
-  margin: 0%;
-  padding: 0%;
-  width: 100%;
-  font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
-  background-image: linear-gradient(#1e1e1e, #3c3c3c);
-  background-repeat: cover; }
-
-/*HEADER Y NAV*/
-/*header-nav para movile terminado*/
-/*INDEX*/
-/*fin del main del index*/
-/*AQUI SE TRABAJARA EL MAIN DE LA SECCION CATEGORIAS!!*/
+/*Categorias*/
 #principal {
   margin: 0;
   display: grid;
@@ -172,13 +159,7 @@ h4 {
 .catrpg article {
   margin-top: 10px; }
 
-/*ACCION*/
-.cataccion__juegos3,
-.cataccion__juegos4,
-.cataccion__juegos5 {
-  display: none; }
-
-.categorias__h3 {
+.categorias__h3, .plataformas__h3 {
   background-image: linear-gradient(#141414, #464646);
   border: 3px solid black;
   border-radius: 15px;
@@ -187,10 +168,21 @@ h4 {
   justify-content: start;
   align-items: center;
   height: 50px; }
+  .categorias__h3 h3, .plataformas__h3 h3 {
+    padding-left: 20px;
+    color: aqua; }
 
-.categorias__h3 h3 {
-  padding-left: 20px;
-  color: aqua; }
+.cataccion__juego-ordenh4,
+.catdeportes__juego-ordenh4,
+.cataventuras__juego-ordenh4,
+.catrpg__juego-ordenh4 {
+  margin-right: 12px; }
+
+/*ACCION*/
+.cataccion__juegos3,
+.cataccion__juegos4,
+.cataccion__juegos5 {
+  display: none; }
 
 .cataccion {
   margin: 20px 10vw;
@@ -201,12 +193,6 @@ h4 {
   display: flex;
   justify-content: space-around;
   margin-top: 5px; }
-
-.cataccion__juego-ordenh4,
-.catdeportes__juego-ordenh4,
-.cataventuras__juego-ordenh4,
-.catrpg__juego-ordenh4 {
-  margin-right: 12px; }
 
 /*DEPORTES*/
 .catdeportes__juegos3,
@@ -256,8 +242,7 @@ h4 {
   justify-content: space-between;
   margin-top: 5px; }
 
-/*fin del main de categorias*/
-/*AQUI SE TRABAJARA EL MAIN DE TIENDA!!!*/
+/*Tienda*/
 .buscar-categorias {
   margin: 0 10vw 3vh 25vw;
   width: 50vw;
@@ -270,6 +255,17 @@ h4 {
   display: flex;
   align-items: center;
   margin: 1vh 0; }
+  .buscartienda input {
+    padding: 10px;
+    width: 20vw;
+    border: 3px;
+    border-radius: 40px;
+    background-color: white;
+    color: black; }
+  .buscartienda img {
+    width: 37px;
+    height: 28px;
+    padding-left: 0.5vw; }
 
 .boton-tienda {
   border-radius: 25px;
@@ -278,33 +274,19 @@ h4 {
   color: aqua;
   border: 2.5px solid aqua; }
 
-.buscartienda input {
-  padding: 10px;
-  width: 20vw;
-  border: 3px;
-  border-radius: 40px;
-  background-color: white;
-  color: black; }
-
-.buscartienda img {
-  width: 37px;
-  height: 28px;
-  padding-left: 0.5vw; }
-
 .selectorestienda {
   display: flex;
   align-items: center;
   justify-content: end;
   margin: 1vh 0; }
-
-.selectorestienda select {
-  color: aqua;
-  height: 4vh;
-  width: 30vw;
-  padding: 0px 20px 0px 10px;
-  font-size: 16px;
-  background-image: linear-gradient(black, #323232);
-  border: 2px aqua; }
+  .selectorestienda select {
+    color: aqua;
+    height: 4vh;
+    width: 30vw;
+    padding: 0px 20px 0px 10px;
+    font-size: 16px;
+    background-image: linear-gradient(black, #323232);
+    border: 2px aqua; }
 
 .tanda1__juegos4,
 .tanda2__juegos8 {
@@ -315,6 +297,22 @@ h4 {
   margin: 5vh 10vw 2vh;
   grid-template-columns: 1;
   grid-template-rows: repeat(2, auto); }
+  .tandas img {
+    height: 80px;
+    width: 20vw; }
+  .tandas a {
+    text-decoration: none;
+    color: #141414; }
+  .tandas button {
+    height: 40px;
+    color: aqua;
+    background-image: linear-gradient(black, #323232);
+    border-radius: 18px;
+    margin-top: 18px;
+    width: 20vw; }
+  .tandas button:hover {
+    background-image: linear-gradient(#03a1a1, skyblue);
+    color: black; }
 
 .tanda1 {
   display: flex;
@@ -322,10 +320,6 @@ h4 {
   align-items: center;
   height: 20vh;
   margin: 5vh 0; }
-
-.tandas img {
-  height: 80px;
-  width: 20vw; }
 
 .tanda__juegos-div {
   display: flex;
@@ -340,33 +334,15 @@ h4 {
   height: 20vh;
   margin: 5vh 0; }
 
-.tandas a {
-  text-decoration: none;
-  color: #141414; }
-
-.tandas button {
-  height: 40px;
-  color: aqua;
-  background-image: linear-gradient(black, #323232);
-  border-radius: 18px;
-  margin-top: 18px;
-  width: 20vw; }
-
-.tandas button:hover {
-  background-image: linear-gradient(#03a1a1, skyblue);
-  color: black; }
-
 .pasarpag {
   height: 50px;
   display: flex;
   justify-content: center;
   align-items: start; }
+  .pasarpag img {
+    margin-left: 10px; }
 
-.pasarpag img {
-  margin-left: 10px; }
-
-/*fin del main del tienda*/
-/*AHORA VOY A TRABAJAR EL MAIN DE PLATAFORMAS!!!!!!!!!*/
+/*Plataformas*/
 #principal {
   margin: 0;
   display: grid;
@@ -392,25 +368,21 @@ h4 {
 .catwii article {
   margin-top: 10px; }
 
-/*ACCION*/
+.plataformas__h3 h3 {
+  padding-left: 20px;
+  color: aqua; }
+
+.catps__juego-ordenh4,
+.catpc__juego-ordenh4,
+.catxbox__juego-ordenh4,
+.catwii__juego-ordenh4 {
+  margin-right: 12px; }
+
+/*PS*/
 .catps__juegos3,
 .catps__juegos4,
 .catps__juegos5 {
   display: none; }
-
-.plataformas__h3 {
-  background-image: linear-gradient(#141414, #464646);
-  border: 3px solid black;
-  border-radius: 15px;
-  margin: 10px 10vw;
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  height: 50px; }
-
-.plataformas__h3 h3 {
-  padding-left: 20px;
-  color: aqua; }
 
 .catps {
   margin: 20px 10vw;
@@ -422,13 +394,7 @@ h4 {
   justify-content: space-around;
   margin-top: 5px; }
 
-.catps__juego-ordenh4,
-.catpc__juego-ordenh4,
-.catxbox__juego-ordenh4,
-.catwii__juego-ordenh4 {
-  margin-right: 12px; }
-
-/*DEPORTES*/
+/*PC*/
 .catpc__juegos3,
 .catpc__juegos4,
 .catpc__juegos5 {
@@ -444,7 +410,7 @@ h4 {
   justify-content: space-between;
   margin-top: 5px; }
 
-/*AVENTURAS*/
+/*XBOX*/
 .catxbox__juegos3,
 .catxbox__juegos4,
 .catxbox__juegos5 {
@@ -460,7 +426,7 @@ h4 {
   justify-content: space-between;
   margin-top: 5px; }
 
-/*RPG*/
+/*WII*/
 .catwii__juegos3,
 .catwii__juegos4,
 .catwii__juegos5 {
@@ -476,34 +442,28 @@ h4 {
   justify-content: space-between;
   margin-top: 5px; }
 
-/*fin del main de plataformas*/
-/*AQUI SE TRABAJARA EL MAIN DE CONTACTO!!!!!*/
+/*Contacto*/
 .h3contacto {
   color: #05dada;
   display: flex;
   margin: 5vh 0;
   justify-content: center; }
-
-.h3contacto h3 {
-  font-size: 20px; }
-
-.seccion1contacto__div p {
-  display: none; }
-
-.seccion1contacto__div button {
-  margin: 15px 0;
-  width: 80px; }
-
-.seccion1contacto__div button:hover {
-  background-image: linear-gradient(#03a1a1, skyblue);
-  color: black; }
-
-.seccion1contacto__div img {
-  width: 40px; }
+  .h3contacto h3 {
+    font-size: 20px; }
 
 .seccion1contacto__div {
   display: flex;
   justify-content: center; }
+  .seccion1contacto__div p {
+    display: none; }
+  .seccion1contacto__div button {
+    margin: 15px 0;
+    width: 80px; }
+  .seccion1contacto__div button:hover {
+    background-image: linear-gradient(#03a1a1, skyblue);
+    color: black; }
+  .seccion1contacto__div img {
+    width: 40px; }
 
 .seccion1contacto__div-wpp {
   display: flex;
@@ -529,10 +489,9 @@ label {
 .formcontacto {
   display: flex;
   justify-content: center; }
-
-.formcontacto a {
-  text-decoration: none;
-  color: black; }
+  .formcontacto a {
+    text-decoration: none;
+    color: black; }
 
 .formcontacto input,
 .formcontacto textarea {
@@ -572,10 +531,29 @@ fieldset {
 .seccion2contacto__iconos {
   display: flex;
   justify-content: center; }
+  .seccion2contacto__iconos img {
+    padding: 10px 15px; }
 
-.seccion2contacto__iconos img {
-  padding: 10px 15px; }
+/*ajustes de body..*/
+body {
+  margin: 0%;
+  padding: 0%;
+  width: 100%;
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+  background-image: linear-gradient(#1e1e1e, #3c3c3c);
+  background-repeat: cover; }
 
+/*HEADER Y NAV*/
+/*header-nav para movile terminado*/
+/*INDEX*/
+/*fin del main del index*/
+/*AQUI SE TRABAJARA EL MAIN DE LA SECCION CATEGORIAS!!*/
+/*fin del main de categorias*/
+/*AQUI SE TRABAJARA EL MAIN DE TIENDA!!!*/
+/*fin del main del tienda*/
+/*AHORA VOY A TRABAJAR EL MAIN DE PLATAFORMAS!!!!!!!!!*/
+/*fin del main de plataformas*/
+/*AQUI SE TRABAJARA EL MAIN DE CONTACTO!!!!!*/
 /*fin del main de contacto*/
 /*AQUI SE TRABAJARA EL FOOTER*/
 /*Fin del footer*/
