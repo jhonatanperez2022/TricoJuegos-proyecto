@@ -1,7 +1,11 @@
+
+$aquavivo: rgb(5, 218, 218);
+$fondobotones: rgb(230, 230, 230);
+
 /*Contacto*/
 
 .h3contacto {
-    color: rgb(5, 218, 218);
+    color: $aquavivo;
     display: flex;
     margin: 5vh 0;
     justify-content: center;
@@ -21,8 +25,10 @@
         width: 80px;
     }
     button:hover {
-        background-image: linear-gradient(rgb(3, 161, 161), skyblue);
+        background-color: rgb(36, 206, 206);
         color: black;
+        box-shadow: 2px 2px 10px black;
+        transition: .3s;
     }
     img {
         width: 40px;
@@ -44,13 +50,13 @@
 .escribinosh3 {
     display: flex;
     justify-content: center;
-    color: rgb(5, 218, 218);
+    color: $aquavivo;
 }
 
 /*el formularioo*/
 
 label {
-    color: rgb(5, 218, 218);
+    color: $aquavivo;
 }
 .formcontacto {
     display: flex;
@@ -64,9 +70,10 @@ label {
 .formcontacto input,
 .formcontacto textarea {
     margin-top: 5px;
-    color: aqua;
+    color: map-get($map: $subtitulos, $key: color );
     background-image: linear-gradient(black, rgb(50, 50, 50) );
     border-radius: 10px;
+    box-shadow: 2px 2px 5px black;
 }
 fieldset {
     border: none;
@@ -74,20 +81,26 @@ fieldset {
     color: 1px solid black;
 }
 .seccion1contacto button {
-    color: aqua;
-    background-image: linear-gradient(black, rgb(50, 50, 50) );
-    border-radius: 10px;
+    font-size: 12px;
+    font-weight: 650;
+    color: black;
+    background-color: $fondobotones;
+    border-color: black;
+    border-radius: 20px;
     padding: 5px;
+    box-shadow: 2px 2px 5px black;
 }
 .seccion1contacto button:hover {
-    background-image: linear-gradient(rgb(3, 161, 161), skyblue);
+    background-color: rgb(36, 206, 206);
     color: black;
+    box-shadow: 2px 2px 10px black;
+    transition: .3s;
 }
 .formcontacto a {
     color: rgb(0, 167, 167);
 }
 .formcontacto a:hover {
-    color: rgb(230, 230, 230);
+    color: $fondobotones;
 }
 
 
@@ -96,7 +109,7 @@ fieldset {
     display: flex;
     justify-content: center;
     h3 {
-        color: rgb(5, 218, 218);
+        color: $aquavivo;
     }
 }
 .seccion2contacto__iconos{

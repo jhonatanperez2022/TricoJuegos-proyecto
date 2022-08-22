@@ -30,7 +30,7 @@ h4 {
     }
     .plataformas__h3 h3{
         padding-left: 20px;
-        color: aqua;
+        color: map-get($map: $subtitulos, $key: color );
     }
     .catps__juego-ordenh4,
 .catpc__juego-ordenh4,

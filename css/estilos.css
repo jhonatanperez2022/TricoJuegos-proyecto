@@ -1,3 +1,4 @@
+/*Index*/
 .subtitulos {
   height: 100px;
   display: flex;
@@ -18,7 +19,7 @@
   grid-gap: 10px; }
 
 .card-juegos {
-  background-color: #b8f8f8;
+  background-color: #e6e6e6;
   margin: 20px 10px;
   height: 20vh;
   text-align: center;
@@ -33,17 +34,18 @@
     margin: 10px 10px 20px; }
   .card-juegos a {
     text-decoration: none;
-    color: aqua;
-    background-color: #141414;
+    font-weight: 650;
+    color: black;
+    background-color: #e6e6e6;
+    border: 1.5px solid black;
     margin: auto;
     padding: 10px;
     font-size: 13px;
-    border-radius: 10px;
+    border-radius: 20px;
     box-shadow: 2px 2px 5px black; }
 
 .card-juegos:hover {
-  background-color: #e2f7f7;
-  cursor: pointer;
+  background-color: white;
   box-shadow: 2px 2px 40px black;
   transition: .3s; }
 
@@ -260,19 +262,24 @@ h4 {
     width: 20vw;
     border: 3px;
     border-radius: 40px;
-    background-color: white;
-    color: black; }
-  .buscartienda img {
-    width: 37px;
-    height: 28px;
-    padding-left: 0.5vw; }
+    background-color: #e6e6e6;
+    color: black;
+    box-shadow: 2px 2px 5px black; }
 
 .boton-tienda {
-  border-radius: 25px;
+  font-weight: 600;
+  border-radius: 20px;
   margin: 0 10px;
-  background-color: #141414;
-  color: aqua;
-  border: 2.5px solid aqua; }
+  background-color: #e6e6e6;
+  color: black;
+  border: 2.5px solid black;
+  box-shadow: 2px 2px 5px black; }
+
+.boton-tienda:hover {
+  background-color: #24cece;
+  color: black;
+  box-shadow: 2px 2px 10px black;
+  transition: .3s; }
 
 .selectorestienda {
   display: flex;
@@ -280,13 +287,14 @@ h4 {
   justify-content: end;
   margin: 1vh 0; }
   .selectorestienda select {
-    color: aqua;
+    color: #05dada;
     height: 4vh;
     width: 30vw;
     padding: 0px 20px 0px 10px;
     font-size: 16px;
     background-image: linear-gradient(black, #323232);
-    border: 2px aqua; }
+    border: 2px #05dada;
+    border-radius: 20px; }
 
 .tanda1__juegos4,
 .tanda2__juegos8 {
@@ -304,15 +312,19 @@ h4 {
     text-decoration: none;
     color: #141414; }
   .tandas button {
+    font-weight: 650;
     height: 40px;
-    color: aqua;
-    background-image: linear-gradient(black, #323232);
-    border-radius: 18px;
+    color: black;
+    background-color: #e6e6e6;
+    border-radius: 20px;
     margin-top: 18px;
-    width: 20vw; }
+    width: 20vw;
+    box-shadow: 2px 2px 5px black; }
   .tandas button:hover {
-    background-image: linear-gradient(#03a1a1, skyblue);
-    color: black; }
+    background-color: #24cece;
+    color: black;
+    box-shadow: 2px 2px 10px black;
+    transition: .3s; }
 
 .tanda1 {
   display: flex;
@@ -460,8 +472,10 @@ h4 {
     margin: 15px 0;
     width: 80px; }
   .seccion1contacto__div button:hover {
-    background-image: linear-gradient(#03a1a1, skyblue);
-    color: black; }
+    background-color: #24cece;
+    color: black;
+    box-shadow: 2px 2px 10px black;
+    transition: .3s; }
   .seccion1contacto__div img {
     width: 40px; }
 
@@ -498,7 +512,8 @@ label {
   margin-top: 5px;
   color: aqua;
   background-image: linear-gradient(black, #323232);
-  border-radius: 10px; }
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px black; }
 
 fieldset {
   border: none;
@@ -506,14 +521,20 @@ fieldset {
   color: 1px solid black; }
 
 .seccion1contacto button {
-  color: aqua;
-  background-image: linear-gradient(black, #323232);
-  border-radius: 10px;
-  padding: 5px; }
+  font-size: 12px;
+  font-weight: 650;
+  color: black;
+  background-color: #e6e6e6;
+  border-color: black;
+  border-radius: 20px;
+  padding: 5px;
+  box-shadow: 2px 2px 5px black; }
 
 .seccion1contacto button:hover {
-  background-image: linear-gradient(#03a1a1, skyblue);
-  color: black; }
+  background-color: #24cece;
+  color: black;
+  box-shadow: 2px 2px 10px black;
+  transition: .3s; }
 
 .formcontacto a {
   color: #00a7a7; }
@@ -564,7 +585,8 @@ body {
     display: none; }
   .form-control,
   .btn {
-    display: block; }
+    display: block;
+    box-shadow: 2px 2px 5px black; }
   .navbar {
     padding: 0;
     display: grid;
@@ -692,8 +714,6 @@ body {
     width: 13vw; }
   .tandas button {
     height: 40px;
-    color: aqua;
-    background-color: #141414;
     border-radius: 18px;
     margin-top: 18px;
     width: 10vw; }

@@ -1,3 +1,6 @@
+
+$fondobotones: rgb(230, 230, 230);
+
 /*Tienda*/
 
 .buscar-categorias{
@@ -17,21 +20,27 @@
         width: 20vw;
         border: 3px;
         border-radius: 40px;
-        background-color: white;
+        background-color: $fondobotones;
         color: black;
+        box-shadow: 2px 2px 5px black;
     }
-    img {
-        width: 37px;
-        height: 28px;
-        padding-left: 0.5vw;
-    }
+    
 }
 .boton-tienda {
-    border-radius: 25px;
+    font-weight: 600;
+    border-radius: 20px;
     margin: 0 10px;
-    background-color: rgb(20, 20, 20);
-    color: aqua;
-    border: 2.5px solid aqua;
+    background-color: $fondobotones;
+    color: black;
+    border: 2.5px solid black ;
+    box-shadow: 2px 2px 5px black;
+}
+.boton-tienda:hover {
+    
+    background-color: rgb(36, 206, 206);
+    color: black;
+    box-shadow: 2px 2px 10px black;
+    transition: .3s;
 }
 
 .selectorestienda {
@@ -40,13 +49,14 @@
     justify-content: end;
     margin: 1vh 0;
     select {
-        color: aqua;
+        color: map-get($map: $subtitulos, $key: aquabueno );
         height: 4vh;
         width: 30vw;
         padding: 0px 20px 0px 10px;
         font-size: 16px;
         background-image: linear-gradient(black, rgb(50, 50, 50) );
-        border: 2px aqua;
+        border: 2px map-get($map: $subtitulos, $key: aquabueno );
+        border-radius: 20px;
     }
 }
 
@@ -70,16 +80,21 @@
         color: rgb(20, 20, 20);
     }
     button {
+        font-weight: 650;
         height: 40px;
-        color: aqua;
-        background-image: linear-gradient(black, rgb(50, 50, 50) );
-        border-radius: 18px;
+        color: black;
+        background-color: $fondobotones;
+        border-radius: 20px;
         margin-top: 18px;
         width: 20vw;
+        box-shadow: 2px 2px 5px black;
     }
     button:hover {
-        background-image: linear-gradient(rgb(3, 161, 161), skyblue);
+        background-color: rgb(36, 206, 206);
         color: black;
+        box-shadow: 2px 2px 10px black;
+        transition: .3s;
+        
     }
 }
 .tanda1 {
