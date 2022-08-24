@@ -33,36 +33,39 @@ $fondobotones: rgb(230, 230, 230);
     display: grid;
     grid-template-columns: 3fr 3fr 3fr;
     grid-template-rows: 6fr 6fr;
-    grid-gap: 10px;
+    gap: 10px;
 }
 .card-juegos {
     background-color: $fondobotones;
-    margin: 20px 10px;
-    height: 20vh;
+    margin: 20px auto;
+    width: 18vw;
+    height: 17vh;
     text-align: center;
     border-radius: 15px;
     box-shadow: 2px 2px 15px black;
     img {
-        @include imgindex (100%, 10vh);
+        @include imgindex (100%, 6vh);
     }
     h5 {
         font-weight: bold;
-        font-size: 15px;
+        font-size: 2vw;
         margin: 10px 10px 20px;
     }
     a {
-        text-decoration: none;
-        font-weight: 650;
+        text-decoration: none; 
+        text-align: center;
+        font-weight: 600;
         color: black;
         background-color: $fondobotones;
         border: 1.5px solid black;
         margin: auto;
         padding: 10px;
-        font-size: 13px;
+        font-size: 1.5vw;
         border-radius: 20px;
         box-shadow: 2px 2px 5px black;
     }
 }
+
 .card-juegos:hover {
     background-color: white;
     box-shadow: 2px 2px 40px black;
