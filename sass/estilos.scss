@@ -14,9 +14,16 @@ body {
     padding: 0%;
     width: 100%;
     font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
-    background-image: linear-gradient(rgb(30, 30, 30), rgb(60, 60, 60) );
-    background-repeat: cover;
+    background-color: rgb(60,60,60);
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.4),
+        rgba(0,0,0,0.4)
+    )
+    ,url('../assets/backgrounds/fondoindex.jpg');
+    
 }
+
 
 
 /*HEADER Y NAV*/
@@ -80,6 +87,12 @@ body {
 
 @media (min-width: 804px) {
     
+    /*body*/
+    body {
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
     /*header y nav*/
     
     .carro {
@@ -107,7 +120,7 @@ body {
     }
     .d-flex input {
         height: 30px;
-        border-radius: 15px;  
+        
     }
     .form-control:focus {
         border-color: black;
@@ -117,13 +130,13 @@ body {
     .btn-outline-success {
         --bs-btn-color: aqua;
         --bs-btn-border-color: aqua;
-        --bs-btn-hover-color: black;
+        --bs-btn-hover-color: rgb(30, 30, 30);
         --bs-btn-hover-bg: aqua;
         --bs-btn-hover-border-color: aqua;
         --bs-btn-active-color: rgb(230, 230, 230);
         --bs-btn-active-bg: aqua;
         --bs-btn-active-border-color: aqua;
-        --bs-btn-active-shadow: inset 0 3px 5px black;
+        --bs-btn-active-shadow: inset 0 3px 5px black ;
         --bs-btn-disabled-color: aqua;
         --bs-btn-focus-shadow-rgb: none;
         --bs-btn-disabled-border-color: aqua;
@@ -133,13 +146,15 @@ body {
         display: flex;
         align-items: center;
         height: 30px;
-        border-radius: 15px;
+        background-color: rgb(30, 30, 30);
+        color: map-get($map: $subtitulos, $key:aquabueno );
+        border: none;
+        border-radius: 0px;
     }
     .d-flex button:hover {
         background-color: rgb(230, 230, 230);
         color: black;
-        border: 1px solid black;
-        transition: 0.3s;
+        transition: 0.4s;
     }
     .collapse {
         flex-direction: row;
@@ -165,7 +180,14 @@ body {
     
     /*INDEXX*/
     
-    
+    .minifrase {
+        width: 60%;
+        margin: 0 auto;
+        p {
+            font-size: 15px;
+        }
+    }
+
     .subtitulos {
         height: 20vh;
     }
@@ -177,58 +199,53 @@ body {
         height: 70vh;
     }
     .card-juegos {
-        width: 60%;
-        height: 30vh;
+        width: 45% !important;
+        height: 25vh;
         margin: auto;
     }
-    .card-juegos img{
+    .cardimg{
         height: 15vh;
     }
-    .card-juegos h5 {
-        font-size: 25px;
-        margin: 10px 10px 30px;
-    }
-    .card-juegos a{
-        padding: 10px;
-        font-size: 13px;
-    }
-    .card-juegos h5 {
+    .card-texto h5 {
         font-size: 1.5vw;
+        margin: 10px 10px 10px;
     }
-    
+    .card-texto button{
+        padding: 10px;
+        font-size: 0.8vw;
+    }
     
     /*categorias*/
     
+    .card-texto img {
+        display: none;
+    }
+    .card-texto button {
+        font-size: 0.8vw;
+    }
+    .flexcarrusel {
+        justify-content: space-between;
+        width: 70%;
+        margin: 15px auto;
+    }
+    .card-juegoscat {
+        width: 18%;
+        margin: 20px auto;
+        height: 25vh;
+    }
+    .cardimg {
+        height: 10vh;
+        width: 100%;
+    }
     
-    .cataccion article,
-    .catdeportes article,
-    .cataventuras article,
-    .catrpg article {
-        margin-top: 20px;
-    }
-    .cataccion__juegos3,
-    .cataccion__juegos4,
-    .cataccion__juegos5 {
-        display: block;
-    }
-    .catdeportes__juegos3,
-    .catdeportes__juegos4,
-    .catdeportes__juegos5 {
-        display: block;
-    }
-    .cataventuras__juegos3,
-    .cataventuras__juegos4,
-    .cataventuras__juegos5 {
-        display: block;
-    }
-    .catrpg__juegos3,
-    .catrpg__juegos4,
-    .catrpg__juegos5 {
-        display: block;
-    }
     
     /*TIENDAA*/
     
+    .d-flex button:hover {
+        background-color: rgb(36, 206, 206);
+        
+    }
+
     .buscar-categorias {
         width: 70vw;
         margin: 0 15vw;
@@ -236,44 +253,29 @@ body {
         flex-direction: row;
         justify-content: space-between;
     }
-    .tanda1__juegos4,
-    .tanda2__juegos8 {
+    #card-juegos4 {
         display: block;
     }
-    
-    .tanda1 article,
-    .tanda2 article {
-        padding: 20px;
-    }
     .tandas {
-        display: flex;
-        flex-direction: column;
-        margin: 0 10vw 0;
+        display: grid;
+        grid-template-rows: 6fr 6fr;
         height: 70vh;
-    }
-    
-    
-    .tanda2 {
-        margin: 10vh 5vw;
-        display: flex;
-        justify-content: center;
+        margin: 50px auto 0px;
     }
     .tanda1 {
-        margin: 10vh 5vw;
-        display: flex;
-        justify-content: center;
+        gap: 20px;
+        
+    }
+    .tanda2 {
+        gap: 20px;
     }
     
-    .tandas img{
-        height: 7vw;
-        width: 13vw;
+    .card-juegostienda {
+        width: 13%;
+        height: 25vh;
+        margin: auto;
     }
-    .tandas button {
-        height: 40px;
-        border-radius: 18px;
-        margin-top: 18px;
-        width: 10vw;
-    }
+    
     .pasarpag{
         height: 100px;
         align-items: center;
@@ -285,45 +287,37 @@ body {
     
     /*PLATAFORMAS*/
     
-    .catps article,
-    .catpc article,
-    .catxbox article,
-    .catwii article {
-        margin-top: 20px;
+    /*Al usar el mismo sistema que encategorias use los mismos codigos*/
+    
+    .card-texto img {
+        display: none;
     }
-    .catps__juegos3,
-    .catps__juegos4,
-    .catps__juegos5 {
-        display: block;
+    .card-texto button {
+        font-size: 0.8vw;
     }
-    .catpc__juegos3,
-    .catpc__juegos4,
-    .catpc__juegos5 {
-        display: block;
+    .flexcarrusel {
+        justify-content: space-between;
+        width: 70%;
+        margin: 15px auto;
     }
-    .catxbox__juegos3,
-    .catxbox__juegos4,
-    .catxbox__juegos5 {
-        display: block;
+    .card-juegoscat {
+        width: 18%;
+        margin: 20px auto;
+        height: 25vh;
     }
-    .catwii__juegos3,
-    .catwii__juegos4,
-    .catwii__juegos5 {
-        display: block;
-    }
-    .catps__juego-ordenh4,
-    .catpc__juego-ordenh4,
-    .catxbox__juego-ordenh4,
-    .catwii__juego-ordenh4 {
-        padding-right: 3px;
-    }
-    .plataformas__h3 h3{
-        font-size: 25px;
+    .cardimg {
+        height: 10vh;
+        width: 100%;
     }
     
     
     /*CONTACTOOO*/
     
+    #maincontacto {
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
     .seccion1contacto{
         display: grid;
         grid-template-columns: auto 35vw;

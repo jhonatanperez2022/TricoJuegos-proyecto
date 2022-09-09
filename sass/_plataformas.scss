@@ -1,112 +1,80 @@
 /*Plataformas*/
 
-#principal{
-    margin: 0;
+
+/*Al usar el mismo sistema que en categorias use exactamente los mismos codigos*/
+
+#maincategorias {
+    width: 75%;
+    margin: 20px auto 80px;
     display: grid;
-    grid-template-columns: 1 1fr;
-    grid-template-rows: 170px 50px 170px 50px 170px 50px 170px 50px 170px;
+    grid-template-rows: 1.2fr;
 }
-h4 {
-    margin: 0;
-    color: rgb(1, 189, 189);
+
+.card-juegoscat {
+    background-color: $fondobotones;
+    margin: 20px auto;
+    width: 18vw;
+    height: 20vh;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 2px 2px 15px black;
 }
-.laflecha {
-    display: flex;
-    align-items: center;
-}
-.articleorden {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.catps article,
-    .catpc article,
-    .catxbox article,
-    .catwii article {
-        margin-top: 10px;
+.card-texto {
+    height: 14vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    a {
+        height: 20px;
     }
-    .plataformas__h3 {
-        @extend .categorias__h3
+    button {
+        width: 75%;
+        margin: 5px auto;
     }
-    .plataformas__h3 h3{
-        padding-left: 20px;
-        color: map-get($map: $subtitulos, $key: color );
+    img {
+        width: 20px;
+        height: 20px;
+        margin-bottom: 5px;
     }
-    .catps__juego-ordenh4,
-.catpc__juego-ordenh4,
-.catxbox__juego-ordenh4,
-.catwii__juego-ordenh4 {
-    margin-right: 12px;
+    h5 {
+        margin: 5px;
+        padding: 5px;
+    }
+    
 }
-
-/*PS*/
-
-.catps__juegos3,
-.catps__juegos4,
-.catps__juegos5 {
-    display: none;
-}
-
-.catps {
-    margin: 20px 10vw;
+.categorias__h3 {
+    background-color: rgb(60, 60, 60);
+    border-radius: 3px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    padding: 30px 0px;
+    margin: 20px auto 0px;
+    h3 {
+        margin: 0;
+        color: map-get($map: $subtitulos, $key:aquabueno );
+        font-weight: 550;
+        font-size: 5vw;
+        letter-spacing: 2px;
+        
+    }
 }
 
-.catps__juego-orden {
-        display: flex;
-        justify-content: space-around;
-        margin-top: 5px;
+.card-juegoscat:hover {
+    background-color: white;
+    box-shadow: 2px 2px 40px black;
+    transition: .3s;
 }
 
-/*PC*/
-
-.catpc__juegos3,
-.catpc__juegos4,
-.catpc__juegos5 {
-    display: none;
-}
-.catpc {
-    margin: 20px 10vw;
-    display: flex;
-    justify-content: space-around;
-}
-.catpc__juego-orden {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 5px;
+.card-juegoscat button:hover {
+    font-weight: bold;
+    color: rgb(240, 240, 240);
+    background-color: rgb(255, 51, 51);
+    box-shadow: 2px 2px 10px black;
+    transition: .3s;
 }
 
-/*XBOX*/
-.catxbox__juegos3,
-.catxbox__juegos4,
-.catxbox__juegos5 {
-    display: none;
-}
-.catxbox {
-    margin: 20px 10vw;
+
+.flexcarrusel {
     display: flex;
-    justify-content: space-around;
-}
-.catxbox__juego-orden {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 5px;
+    flex-direction: row;
 }
 
-/*WII*/
-.catwii__juegos3,
-.catwii__juegos4,
-.catwii__juegos5 {
-    display: none;
-}
-.catwii {
-    margin: 20px 10vw;
-    display: flex;
-    justify-content: space-around;
-}
-.catwii__juego-orden {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 5px;
-}

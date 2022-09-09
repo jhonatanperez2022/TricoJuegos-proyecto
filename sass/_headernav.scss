@@ -4,14 +4,13 @@ nav {
     background-image: linear-gradient(black, rgb(39, 37, 37));
 }
 .navbar-toggler {
-    color: $colornavfooter;
-    margin-left: 8px;
+    background-color: #3dbcfe;
+    width: 70%;
+    margin: 0 auto;
+    box-shadow: 2px 2px 15px black;
 }
-button {
-    span {
-        background-color: $colornavfooter;
-    }
-}
+
+
 
 header {
     a {
@@ -38,7 +37,7 @@ header {
     flex-direction: column;
     a {
         color: $colornavfooter;
-    padding: 4px 1.8vw;
+        padding: 4px 1.8vw;
     }
 }
 .collapse a:hover {

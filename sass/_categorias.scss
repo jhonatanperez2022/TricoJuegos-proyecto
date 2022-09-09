@@ -1,126 +1,98 @@
 /*Categorias*/
 
-#principal{
-    margin: 0;
+#maincategorias {
+    width: 75%;
+    margin: 20px auto 80px;
     display: grid;
-    grid-template-columns: 1 1fr;
-    grid-template-rows: 170px 50px 170px 50px 170px 50px 170px 50px 170px;
+    grid-template-rows: 1.2fr;
 }
-h4 {
-    margin: 0;
-    color: rgb(1, 189, 189);
+
+.card-juegoscat {
+    background-color: $fondobotones;
+    margin: 20px auto;
+    width: 18vw;
+    height: 20vh;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 2px 2px 15px black;
 }
-.laflecha {
-    display: flex;
-    align-items: center;
-}
-.articleorden {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.cataccion article,
-    .catdeportes article,
-    .cataventuras article,
-    .catrpg article {
-        margin-top: 10px;
+.card-texto {
+    height: 14vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    a {
+        height: 20px;
     }
-
-    .categorias__h3 {
-        background-image: linear-gradient(rgb(20, 20, 20), rgb(70, 70, 70) );
-        border: 3px solid black;
-        border-radius: 15px;
-        margin: 10px 10vw;
-        display: flex;
-        justify-content: start;
-        align-items: center;
-        height: 50px;
-        h3 {
-            padding-left: 20px;
-            color: map-get($map: $subtitulos, $key: color );
-        }
+    button {
+        width: 75%;
+        margin: 5px auto;
     }
-
-    .cataccion__juego-ordenh4,
-.catdeportes__juego-ordenh4,
-.cataventuras__juego-ordenh4,
-.catrpg__juego-ordenh4 {
-    margin-right: 12px;
+    img {
+        width: 20px;
+        height: 20px;
+        margin-bottom: 5px;
+    }
+    h5 {
+        margin: 5px;
+        padding: 5px;
+    }
+    
 }
-
-/*ACCION*/
-
-.cataccion__juegos3,
-.cataccion__juegos4,
-.cataccion__juegos5 {
-    display: none;
-}
-
-
-
-
-
-.cataccion {
-    margin: 20px 10vw;
+.categorias__h3 {
+    background-color: rgb(60, 60, 60);
+    border-radius: 3px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    padding: 30px 0px;
+    margin: 20px auto 0px;
+    h3 {
+        margin: 0;
+        color: map-get($map: $subtitulos, $key:aquabueno );
+        font-weight: 550;
+        font-size: 5vw;
+        letter-spacing: 2px;
+        
+    }
 }
 
-.cataccion__juego-orden {
-        display: flex;
-        justify-content: space-around;
-        margin-top: 5px;
+.card-juegoscat:hover {
+    background-color: white;
+    box-shadow: 2px 2px 40px black;
+    transition: .3s;
+}
+
+.card-juegoscat button:hover {
+    font-weight: bold;
+    color: rgb(240, 240, 240);
+    background-color: rgb(255, 51, 51);
+    box-shadow: 2px 2px 10px black;
+    transition: .3s;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: black;
+    border-radius: 20px;
+}
+
+.flexcarrusel {
+    display: flex;
+    flex-direction: row;
 }
 
 
-/*DEPORTES*/
 
-.catdeportes__juegos3,
-.catdeportes__juegos4,
-.catdeportes__juegos5 {
-    display: none;
-}
-.catdeportes {
-    margin: 20px 10vw;
-    display: flex;
-    justify-content: space-around;
-}
-.catdeportes__juego-orden {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 5px;
-}
 
-/*AVENTURAS*/
-.cataventuras__juegos3,
-.cataventuras__juegos4,
-.cataventuras__juegos5 {
-    display: none;
-}
-.cataventuras {
-    margin: 20px 10vw;
-    display: flex;
-    justify-content: space-around;
-}
-.cataventuras__juego-orden {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 5px;
-}
 
-/*RPG*/
-.catrpg__juegos3,
-.catrpg__juegos4,
-.catrpg__juegos5 {
-    display: none;
-}
-.catrpg {
-    margin: 20px 10vw;
-    display: flex;
-    justify-content: space-around;
-}
-.catrpg__juego-orden {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 5px;
-}
+
+
+
+
+
+
+
+
+
+
+
+

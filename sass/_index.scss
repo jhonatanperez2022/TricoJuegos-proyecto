@@ -20,6 +20,7 @@ $fondobotones: rgb(230, 230, 230);
     align-items: center;
     background-image: map-get($map: $subtitulos, $key: fondocolor);
     h2 {
+        font-weight: bold;
         margin: 0;
         font-size: map-get($map: $subtitulos, $key: letrasize);
         color: map-get($map: $subtitulos, $key: color);
@@ -43,27 +44,28 @@ $fondobotones: rgb(230, 230, 230);
     text-align: center;
     border-radius: 15px;
     box-shadow: 2px 2px 15px black;
-    img {
-        @include imgindex (100%, 6vh);
-    }
+    
+}
+.card-texto {
     h5 {
         font-weight: bold;
         font-size: 2vw;
         margin: 10px 10px 20px;
     }
-    a {
-        text-decoration: none; 
+    button {
         text-align: center;
         font-weight: 600;
         color: black;
         background-color: $fondobotones;
-        border: 1.5px solid black;
+        border: none;
         margin: auto;
         padding: 10px;
         font-size: 1.5vw;
-        border-radius: 20px;
         box-shadow: 2px 2px 5px black;
     }
+}
+.cardimg {
+    @include imgindex (100%, 6vh);
 }
 
 .card-juegos:hover {
@@ -72,10 +74,25 @@ $fondobotones: rgb(230, 230, 230);
     transition: .3s;
 }
 
-.card-juegos a:hover {
+.card-juegos button:hover {
     font-weight: bold;
-    background-color: rgb(36, 206, 206);
-    color: black;
+    color: rgb(240, 240, 240);
+    background-color: rgb(255, 51, 51);
     box-shadow: 2px 2px 10px black;
     transition: .3s;
+}
+
+.minifrase {
+    display: flex;
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+    p {
+        margin: 0;
+        color: map-get($map: $subtitulos, $key:aquabueno );
+        padding: 10px 0 20px 0;
+        font-weight: bold;
+        font-size: 2vw;
+    }
 }

@@ -4,6 +4,18 @@ $fondobotones: rgb(230, 230, 230);
 
 /*Contacto*/
 
+#maincontacto {
+    background-color: rgb(60,60,60);
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.4),
+        rgba(0,0,0,0.4)
+    )
+    ,url('../assets/backgrounds/fondoindex.jpg');
+    background-size: cover;
+    
+}
+
 .h3contacto {
     color: $aquavivo;
     display: flex;
@@ -70,9 +82,9 @@ label {
 .formcontacto input,
 .formcontacto textarea {
     margin-top: 5px;
-    color: map-get($map: $subtitulos, $key: color );
-    background-image: linear-gradient(black, rgb(50, 50, 50) );
-    border-radius: 10px;
+    color: rgb(30,30,30);
+    background-color: rgb(230,230,230);
+    border: none;
     box-shadow: 2px 2px 5px black;
 }
 fieldset {
@@ -85,8 +97,7 @@ fieldset {
     font-weight: 650;
     color: black;
     background-color: $fondobotones;
-    border-color: black;
-    border-radius: 20px;
+    border: none;
     padding: 5px;
     box-shadow: 2px 2px 5px black;
 }
@@ -100,7 +111,7 @@ fieldset {
     color: rgb(0, 167, 167);
 }
 .formcontacto a:hover {
-    color: $fondobotones;
+    color: map-get($map: $subtitulos, $key: aquabueno );
 }
 
 
